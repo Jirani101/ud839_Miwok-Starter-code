@@ -28,4 +28,34 @@
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">Family Members</string>
+    <string name="miwok_color_dusty_yellow">yellow</string>
+    <string name="color_green">green</string>
+    <string name="miwok_color_green">green2</string>
+    <string name="color_brown">brown</string>
+    <string name="miwok_color_brown">brown2</string>
+    <string name="color_gray">gray</string>
+    <string name="miwok_color_gray">gray2</string>
+    <string name="color_black">black</string>
+    <string name="miwok_color_black">black2</string>
+    <string name="color_white">white</string>
+    <string name="miwok_color_white">white2</string>
+    <string name="miwok_number_one">number2</string>
+    <string name="number_two">two</string>
+    <string name="miwok_number_two">number2</string>
+    <string name="number_three">three</string>
+    <string name="miwok_number_three">three2</string>
+    <string name="number_four">four</string>
+    <string name="miwok_number_four">four2</string>
+    <string name="number_five">five</string>
+    <string name="miwok_number_five">five2</string>
+    <string name="number_six">six</string>
+    <string name="miwok_number_six">six2</string>
+    <string name="number_seven">seven</string>
+    <string name="miwok_number_seven">seven2</string>
+    <string name="number_eight">eight</string>
+    <string name="miwok_number_eight">eight2</string>
+    <string name="number_nine">nine</string>
+    <string name="miwok_number_nine">nine2</string>
+    <string name="number_ten">ten</string>
+    <string name="miwok_number_ten">ten2</string>
 </resources>

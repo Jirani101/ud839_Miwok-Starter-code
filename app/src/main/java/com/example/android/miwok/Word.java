@@ -1,32 +1,39 @@
 package com.example.android.miwok;
 
 /**
- * Created by Alexander on
- * 5/17/2017.
+ * Created by admin on 24-06-2016.
  */
-
 public class Word {
 
-    private static final int NO_IMAGE_PROVIDED = 0;
     //Default Translation for the words
-    private final String mDefaultTranslation;
-    //Miwok Translation for the words
-    private final String mMiwokTranslation;
-    //Default image for the words
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
+    private int mDefaultTranslation;
+
+    private int mMiwokTranslation;
+
+
     /**
-     * Audio resource ID for the word
+     * Image resource ID for the word
      */
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    /**
+     * Constant value that represents no image was provided for this word
+     */
+    private static final int NO_IMAGE_PROVIDED = -1;
+
+    //Music file Id for words
     private int mAudioResourceId;
 
     // constructor for the new word object
-    public Word(String defaultTranslation, String miwokTranslation, int audioResourceId) {
+    public Word(int defaultTranslation, int miwokTranslation, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mAudioResourceId = audioResourceId;
+
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId) {
+    // constructor for the new word object with image Resource id
+    public Word(int defaultTranslation, int miwokTranslation, int imageResourceId, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageResourceId;
@@ -34,42 +41,28 @@ public class Word {
     }
 
 
-    public String getmMiwokTranslation() {
-        return mMiwokTranslation;
-    }
-
-    public String getmDefaultTranslation() {
+    //get the default Translation
+    public int getmDefaultTranslation() {
         return mDefaultTranslation;
     }
 
-    /**
-     * @return the image source Id for the word
-     */
+    //get the miwok Translation
+    public int getmMiwokTranslation() {
+        return mMiwokTranslation;
+    }
+
+    //get the image resource Id
     public int getImageResourceId() {
         return mImageResourceId;
     }
 
-    /**
-     * @return Whether or not there is an image for this word
-     */
-
-    public int getAudioResourceId() {
-        return mAudioResourceId;
-    }
-
+    // check whether image resource id is provided or not
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
-    /**
-     * Returns the string representation of the {@link Word} object.
-     */
-    @Override
-    public String toString() {
-        return "Word{" +
-                "mDefaultTranslation='" + mDefaultTranslation + '\'' +
-                ", mMiwokTranslation='" + mMiwokTranslation + '\'' +
-                ", mImageResourceId=" + mImageResourceId +
-                ", mAudioResourceId=" + mAudioResourceId +
-                '}';
+
+    //get the audio file resource id
+    public int getAudioResourceId() {
+        return mAudioResourceId;
     }
 }
