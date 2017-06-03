@@ -19,7 +19,7 @@ public class Word {
     /**
      * Constant value that represents no image was provided for this word
      */
-    private static final int NO_IMAGE_PROVIDED = -1;
+    private static final int NO_IMAGE_PROVIDED = 0;
 
     //Music file Id for words
     private int mAudioResourceId;
