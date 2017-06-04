@@ -94,7 +94,7 @@ public class NumbersFragment extends Fragment {
         mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
 
         // Create a list of words
-        final ArrayList<Word> words = new ArrayList<Word>();
+        final ArrayList<Word> words = new ArrayList<>();
         words.add(new Word(R.string.number_one, R.string.miwok_number_one,
                 R.drawable.number_one, R.raw.number_one));
         words.add(new Word(R.string.number_two, R.string.miwok_number_two,
